@@ -12,7 +12,7 @@ import Firebase
 class postArticleViewController: UIViewController {
     
     @IBOutlet weak var TextField: UITextField!
-    @IBOutlet weak var displayAge: UILabel!
+    @IBOutlet weak var displayUrl: UILabel!
     
     // インスタンス変数
     
@@ -24,12 +24,12 @@ class postArticleViewController: UIViewController {
     
     @IBAction func add(_ sender: AnyObject) {
         let DBRef:DatabaseReference = Database.database().reference()
-        let age: Int = Int(TextField.text!)!
-        let data = ["age": age]
+        let url: String = String(TextField.text!)
+        let data = ["url": url]
         DBRef.child("user/01").setValue(data)
         
         let defaultPlace = DBRef.child("user/01/age")
-        defaultPlace.observe(.value) { (snap: DataSnapshot) in self.displayAge.text = (snap.value! as AnyObject).description
+        defaultPlace.observe(.value) { (snap: DataSnapshot) in self.displayUrl.text = (snap.value! as AnyObject).description
         }
     }
 }
