@@ -25,7 +25,9 @@ class postArticleViewController: UIViewController {
     @IBAction func add(_ sender: AnyObject) {
         let DBRef:DatabaseReference = Database.database().reference()
         let url: String = String(TextField.text!)
+        print(url)
         let data = ["url": url]
+        print(data)
         DBRef.child("user/01").setValue(data)
         
         let defaultPlace = DBRef.child("user/01/age")

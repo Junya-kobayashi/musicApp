@@ -150,7 +150,7 @@
                     </view>
                     <connections>
                         <outlet property="TextField" destination="So9-Qd-ron" id="9QD-fT-RDw"/>
-                        <outlet property="displayAge" destination="oYK-Nc-11R" id="g0R-8w-W82"/>
+                        <outlet property="displayUrl" destination="oYK-Nc-11R" id="US8-qn-ph0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nUO-nl-L3q" userLabel="First Responder" sceneMemberID="firstResponder"/>
