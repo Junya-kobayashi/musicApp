@@ -13,10 +13,7 @@ class postArticleViewController: UIViewController {
     
     @IBOutlet weak var TextField: UITextField!
     @IBOutlet weak var displayUrl: UILabel!
-    
     // インスタンス変数
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,13 +22,15 @@ class postArticleViewController: UIViewController {
     @IBAction func add(_ sender: AnyObject) {
         let DBRef:DatabaseReference = Database.database().reference()
         let url: String = String(TextField.text!)
-        print(url)
+//        print(url)
         let data = ["url": url]
-        print(data)
+//        print(data)
         DBRef.child("user/01").setValue(data)
         
-        let defaultPlace = DBRef.child("user/01/age")
-        defaultPlace.observe(.value) { (snap: DataSnapshot) in self.displayUrl.text = (snap.value! as AnyObject).description
+        let defaultPlace = DBRef.child("user/01")
+        defaultPlace.observe(.value) { (snap: DataSnapshot) in
+            let dic = snap.value as! [String: Any]
+            self.displayUrl.text = dic["url"] as? String
         }
     }
 }
