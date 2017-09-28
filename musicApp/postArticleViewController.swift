@@ -9,7 +9,9 @@
 import UIKit
 import Firebase
 
-class postArticleViewController: UIViewController {
+class postArticleViewController: UIViewController, UITableViewDataSource {
+    
+    @IBOutlet var table:UITableView!
     
     @IBOutlet weak var TextField: UITextField!
     @IBOutlet weak var displayUrl: UILabel!
@@ -18,6 +20,22 @@ class postArticleViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
+        cell?.textLabel?.text="test"
+        
+        return cell!
+    }
+    
     
     @IBAction func add(_ sender: AnyObject) {
         let DBRef:DatabaseReference = Database.database().reference()
