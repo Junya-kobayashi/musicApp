@@ -20,6 +20,7 @@
 		F6B30F061F7786C000DAD8D6 /* musicAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30F051F7786C000DAD8D6 /* musicAppUITests.swift */; };
 		F6B30F151F79192E00DAD8D6 /* postArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30F141F79192E00DAD8D6 /* postArticleViewController.swift */; };
 		F6B30F191F7930B600DAD8D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6B30F181F7930AF00DAD8D6 /* GoogleService-Info.plist */; };
+		F6B30F1B1F7CE85000DAD8D6 /* postUrlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30F1A1F7CE85000DAD8D6 /* postUrlViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		F6B30F071F7786C000DAD8D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6B30F141F79192E00DAD8D6 /* postArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postArticleViewController.swift; sourceTree = "<group>"; };
 		F6B30F181F7930AF00DAD8D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F6B30F1A1F7CE85000DAD8D6 /* postUrlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postUrlViewController.swift; sourceTree = "<group>"; };
 		FBB351DB8EE2E0D28DB8D72F /* Pods-musicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-musicApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-musicApp/Pods-musicApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +154,7 @@
 				F6B30EF11F7786C000DAD8D6 /* Info.plist */,
 				F6B30F181F7930AF00DAD8D6 /* GoogleService-Info.plist */,
 				F6B30EE91F7786C000DAD8D6 /* musicApp.xcdatamodeld */,
+				F6B30F1A1F7CE85000DAD8D6 /* postUrlViewController.swift */,
 			);
 			path = musicApp;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6B30EE51F7786C000DAD8D6 /* ViewController.swift in Sources */,
+				F6B30F1B1F7CE85000DAD8D6 /* postUrlViewController.swift in Sources */,
 				F6B30EEB1F7786C000DAD8D6 /* musicApp.xcdatamodeld in Sources */,
 				F6B30F151F79192E00DAD8D6 /* postArticleViewController.swift in Sources */,
 				F6B30EE31F7786C000DAD8D6 /* AppDelegate.swift in Sources */,
