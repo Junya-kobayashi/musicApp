@@ -31,6 +31,8 @@ class postUrlViewController: UIViewController, UITextViewDelegate {
         let url: String = String(TextField.text!)
         let data = ["url": url]
         DBRef.child("user/01").setValue(data)
+        
+        self.dismiss(animated: true, completion: nil)
     }
     
 }
