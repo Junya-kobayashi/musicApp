@@ -199,6 +199,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="i4U-cp-86d"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="post" id="R8o-lm-cJU"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ia-a4-L3G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
