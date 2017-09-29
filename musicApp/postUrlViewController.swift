@@ -9,9 +9,11 @@
 import UIKit
 import Firebase
 
-class postUrlViewController: UIViewController {
+class postUrlViewController: UIViewController, UITextViewDelegate {
     
+   
     @IBOutlet weak var TextField: UITextField!
+     @IBOutlet weak var TextView: UITextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,14 +28,9 @@ class postUrlViewController: UIViewController {
     
     @IBAction func post(_ sender: AnyObject) {
         let DBRef:DatabaseReference = Database.database().reference()
-        let url: String = String(UITextField)
+        let url: String = String(TextField.text!)
         let data = ["url": url]
-        if(data == null){
-            DBRef.child("user/01").setValue(data)
-        }else{
-            DBRef.child("user/01").push(data)
-        }
-        
+        DBRef.child("user/01").setValue(data)
     }
     
 }
