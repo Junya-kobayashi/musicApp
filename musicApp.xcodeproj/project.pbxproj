@@ -10,7 +10,6 @@
 		A259D9F0CDCEB2B713EC8635 /* Pods_musicApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5293BC9051E70A80A39E2C33 /* Pods_musicApp.framework */; };
 		D4A021C44FE91DCCBE80D2EF /* Pods_musicAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA3B576732A5B0B64217217 /* Pods_musicAppTests.framework */; };
 		F5C8EEB25DA4902032475025 /* Pods_musicAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8BC22A327470DF20CBDCD91 /* Pods_musicAppUITests.framework */; };
-		F6B30EE31F7786C000DAD8D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30EE21F7786C000DAD8D6 /* AppDelegate.swift */; };
 		F6B30EE51F7786C000DAD8D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30EE41F7786C000DAD8D6 /* ViewController.swift */; };
 		F6B30EE81F7786C000DAD8D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B30EE61F7786C000DAD8D6 /* Main.storyboard */; };
 		F6B30EEB1F7786C000DAD8D6 /* musicApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6B30EE91F7786C000DAD8D6 /* musicApp.xcdatamodeld */; };
@@ -21,6 +20,10 @@
 		F6B30F151F79192E00DAD8D6 /* postArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30F141F79192E00DAD8D6 /* postArticleViewController.swift */; };
 		F6B30F191F7930B600DAD8D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6B30F181F7930AF00DAD8D6 /* GoogleService-Info.plist */; };
 		F6B30F1B1F7CE85000DAD8D6 /* postUrlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30F1A1F7CE85000DAD8D6 /* postUrlViewController.swift */; };
+		F6B30F1D1F80BA3D00DAD8D6 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30F1C1F80BA3D00DAD8D6 /* URL.swift */; };
+		F6B30F1E1F81BD5C00DAD8D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30EE21F7786C000DAD8D6 /* AppDelegate.swift */; };
+		F6B30F211F81BD6100DAD8D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30EE21F7786C000DAD8D6 /* AppDelegate.swift */; };
+		F6B30F221F81BD6100DAD8D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30EE21F7786C000DAD8D6 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,7 @@
 		F6B30F141F79192E00DAD8D6 /* postArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postArticleViewController.swift; sourceTree = "<group>"; };
 		F6B30F181F7930AF00DAD8D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F6B30F1A1F7CE85000DAD8D6 /* postUrlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postUrlViewController.swift; sourceTree = "<group>"; };
+		F6B30F1C1F80BA3D00DAD8D6 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		FBB351DB8EE2E0D28DB8D72F /* Pods-musicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-musicApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-musicApp/Pods-musicApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +159,7 @@
 				F6B30F181F7930AF00DAD8D6 /* GoogleService-Info.plist */,
 				F6B30EE91F7786C000DAD8D6 /* musicApp.xcdatamodeld */,
 				F6B30F1A1F7CE85000DAD8D6 /* postUrlViewController.swift */,
+				F6B30F1C1F80BA3D00DAD8D6 /* URL.swift */,
 			);
 			path = musicApp;
 			sourceTree = "<group>";
@@ -475,11 +480,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6B30F1E1F81BD5C00DAD8D6 /* AppDelegate.swift in Sources */,
 				F6B30EE51F7786C000DAD8D6 /* ViewController.swift in Sources */,
 				F6B30F1B1F7CE85000DAD8D6 /* postUrlViewController.swift in Sources */,
 				F6B30EEB1F7786C000DAD8D6 /* musicApp.xcdatamodeld in Sources */,
 				F6B30F151F79192E00DAD8D6 /* postArticleViewController.swift in Sources */,
-				F6B30EE31F7786C000DAD8D6 /* AppDelegate.swift in Sources */,
+				F6B30F1D1F80BA3D00DAD8D6 /* URL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +493,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6B30F221F81BD6100DAD8D6 /* AppDelegate.swift in Sources */,
 				F6B30EFB1F7786C000DAD8D6 /* musicAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,6 +502,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6B30F211F81BD6100DAD8D6 /* AppDelegate.swift in Sources */,
 				F6B30F061F7786C000DAD8D6 /* musicAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

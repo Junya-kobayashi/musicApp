@@ -9,48 +9,47 @@
 import UIKit
 import Firebase
 
-class postArticleViewController: UIViewController, UITableViewDataSource {
+class postArticleViewController: UITableViewController {
     
     @IBOutlet var table:UITableView!
     
     @IBOutlet weak var TextField: UITextField!
+    @IBOutlet weak var TextView: UITextView!
     @IBOutlet weak var displayUrl: UILabel!
+    
+    
+    var ref: DatabaseReference!
+    var refHandle: UInt!
+    
     var urlList = [URL]()
+    
+    var displayurl: String!
     
     // インスタンス変数
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
     }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return urlList.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
-        cell?.textLabel?.text="test"
-        
+        cell?.textLabel?.text = urlList[indexPath.row].url
         return cell!
     }
     
     
-    @IBAction func add(_ sender: AnyObject) {
-        let DBRef:DatabaseReference = Database.database().reference()
-        let url: String = String(TextField.text!)
-//        print(url)
-        let data = ["url": url]
-//        print(data)
-        DBRef.child("user/01").setValue(data)
-        
-        let defaultPlace = DBRef.child("user/01")
-        defaultPlace.observe(.value) { (snap: DataSnapshot) in
-            let dic = snap.value as! [String: Any]
-            self.displayUrl.text = dic["url"] as? String
-        }
-    }
+   
+    
 }
