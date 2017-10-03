@@ -17,13 +17,13 @@
 		F6B30EF01F7786C000DAD8D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B30EEE1F7786C000DAD8D6 /* LaunchScreen.storyboard */; };
 		F6B30EFB1F7786C000DAD8D6 /* musicAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30EFA1F7786C000DAD8D6 /* musicAppTests.swift */; };
 		F6B30F061F7786C000DAD8D6 /* musicAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30F051F7786C000DAD8D6 /* musicAppUITests.swift */; };
-		F6B30F151F79192E00DAD8D6 /* postArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30F141F79192E00DAD8D6 /* postArticleViewController.swift */; };
+		F6B30F151F79192E00DAD8D6 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30F141F79192E00DAD8D6 /* ArticleViewController.swift */; };
 		F6B30F191F7930B600DAD8D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6B30F181F7930AF00DAD8D6 /* GoogleService-Info.plist */; };
-		F6B30F1B1F7CE85000DAD8D6 /* postUrlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30F1A1F7CE85000DAD8D6 /* postUrlViewController.swift */; };
-		F6B30F1D1F80BA3D00DAD8D6 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30F1C1F80BA3D00DAD8D6 /* URL.swift */; };
-		F6B30F1E1F81BD5C00DAD8D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30EE21F7786C000DAD8D6 /* AppDelegate.swift */; };
-		F6B30F211F81BD6100DAD8D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30EE21F7786C000DAD8D6 /* AppDelegate.swift */; };
-		F6B30F221F81BD6100DAD8D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30EE21F7786C000DAD8D6 /* AppDelegate.swift */; };
+		F6B30F1B1F7CE85000DAD8D6 /* PostUrlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30F1A1F7CE85000DAD8D6 /* PostUrlViewController.swift */; };
+		F6B30F1D1F80BA3D00DAD8D6 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30F1C1F80BA3D00DAD8D6 /* Article.swift */; };
+		F6B30F231F83A9A200DAD8D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30EE21F7786C000DAD8D6 /* AppDelegate.swift */; };
+		F6B30F241F83A9A200DAD8D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30EE21F7786C000DAD8D6 /* AppDelegate.swift */; };
+		F6B30F251F83A9A400DAD8D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30EE21F7786C000DAD8D6 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,10 +66,10 @@
 		F6B30F011F7786C000DAD8D6 /* musicAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = musicAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B30F051F7786C000DAD8D6 /* musicAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicAppUITests.swift; sourceTree = "<group>"; };
 		F6B30F071F7786C000DAD8D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F6B30F141F79192E00DAD8D6 /* postArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postArticleViewController.swift; sourceTree = "<group>"; };
+		F6B30F141F79192E00DAD8D6 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		F6B30F181F7930AF00DAD8D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		F6B30F1A1F7CE85000DAD8D6 /* postUrlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postUrlViewController.swift; sourceTree = "<group>"; };
-		F6B30F1C1F80BA3D00DAD8D6 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		F6B30F1A1F7CE85000DAD8D6 /* PostUrlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUrlViewController.swift; sourceTree = "<group>"; };
+		F6B30F1C1F80BA3D00DAD8D6 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		FBB351DB8EE2E0D28DB8D72F /* Pods-musicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-musicApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-musicApp/Pods-musicApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,12 +154,12 @@
 				F6B30EE61F7786C000DAD8D6 /* Main.storyboard */,
 				F6B30EEC1F7786C000DAD8D6 /* Assets.xcassets */,
 				F6B30EEE1F7786C000DAD8D6 /* LaunchScreen.storyboard */,
-				F6B30F141F79192E00DAD8D6 /* postArticleViewController.swift */,
+				F6B30F141F79192E00DAD8D6 /* ArticleViewController.swift */,
 				F6B30EF11F7786C000DAD8D6 /* Info.plist */,
 				F6B30F181F7930AF00DAD8D6 /* GoogleService-Info.plist */,
 				F6B30EE91F7786C000DAD8D6 /* musicApp.xcdatamodeld */,
-				F6B30F1A1F7CE85000DAD8D6 /* postUrlViewController.swift */,
-				F6B30F1C1F80BA3D00DAD8D6 /* URL.swift */,
+				F6B30F1A1F7CE85000DAD8D6 /* PostUrlViewController.swift */,
+				F6B30F1C1F80BA3D00DAD8D6 /* Article.swift */,
 			);
 			path = musicApp;
 			sourceTree = "<group>";
@@ -480,12 +480,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6B30F1E1F81BD5C00DAD8D6 /* AppDelegate.swift in Sources */,
+				F6B30F251F83A9A400DAD8D6 /* AppDelegate.swift in Sources */,
 				F6B30EE51F7786C000DAD8D6 /* ViewController.swift in Sources */,
-				F6B30F1B1F7CE85000DAD8D6 /* postUrlViewController.swift in Sources */,
+				F6B30F1B1F7CE85000DAD8D6 /* PostUrlViewController.swift in Sources */,
 				F6B30EEB1F7786C000DAD8D6 /* musicApp.xcdatamodeld in Sources */,
-				F6B30F151F79192E00DAD8D6 /* postArticleViewController.swift in Sources */,
-				F6B30F1D1F80BA3D00DAD8D6 /* URL.swift in Sources */,
+				F6B30F151F79192E00DAD8D6 /* ArticleViewController.swift in Sources */,
+				F6B30F1D1F80BA3D00DAD8D6 /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,7 +493,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6B30F221F81BD6100DAD8D6 /* AppDelegate.swift in Sources */,
+				F6B30F231F83A9A200DAD8D6 /* AppDelegate.swift in Sources */,
 				F6B30EFB1F7786C000DAD8D6 /* musicAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,7 +502,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6B30F211F81BD6100DAD8D6 /* AppDelegate.swift in Sources */,
+				F6B30F241F83A9A200DAD8D6 /* AppDelegate.swift in Sources */,
 				F6B30F061F7786C000DAD8D6 /* musicAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

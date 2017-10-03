@@ -35,11 +35,13 @@ class postUrlViewController: UIViewController, UITextViewDelegate {
         let comment: String = String(TextView.text!)
         let data = ["url": url, "comment": comment]
         DBRef.child("user/01").childByAutoId().setValue(data)
-        let defaultPlace = DBRef.child("user/01")
-        defaultPlace.observe(.value) {(snap: DataSnapshot) in
-            let dic = snap.value as! [String: Any]
-            self.displayUrl.text = dic["url"] as? String
-        }
+//        let defaultPlace = DBRef.child("user/01")
+//        defaultPlace.observe(.value) {(snap: DataSnapshot) in
+//            let dic = snap.value as! [String: Any]
+//            self.displayUrl.text = dic["url"] as? String
+//        }
+        
+        self.dismiss(animated: true, completion: nil)
     }
     
     

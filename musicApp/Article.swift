@@ -8,7 +8,7 @@
 
 import UIKit
 
-class URL: NSObject {
+class Article: NSObject {
     
     var url: String?
     var comment: String?
