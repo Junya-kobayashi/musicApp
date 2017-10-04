@@ -24,6 +24,7 @@
 		F6B30F231F83A9A200DAD8D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30EE21F7786C000DAD8D6 /* AppDelegate.swift */; };
 		F6B30F241F83A9A200DAD8D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30EE21F7786C000DAD8D6 /* AppDelegate.swift */; };
 		F6B30F251F83A9A400DAD8D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30EE21F7786C000DAD8D6 /* AppDelegate.swift */; };
+		F6B30F271F84B96400DAD8D6 /* StartGradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30F261F84B96400DAD8D6 /* StartGradientViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		F6B30F181F7930AF00DAD8D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F6B30F1A1F7CE85000DAD8D6 /* PostUrlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUrlViewController.swift; sourceTree = "<group>"; };
 		F6B30F1C1F80BA3D00DAD8D6 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		F6B30F261F84B96400DAD8D6 /* StartGradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGradientViewController.swift; sourceTree = "<group>"; };
 		FBB351DB8EE2E0D28DB8D72F /* Pods-musicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-musicApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-musicApp/Pods-musicApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +162,7 @@
 				F6B30EE91F7786C000DAD8D6 /* musicApp.xcdatamodeld */,
 				F6B30F1A1F7CE85000DAD8D6 /* PostUrlViewController.swift */,
 				F6B30F1C1F80BA3D00DAD8D6 /* Article.swift */,
+				F6B30F261F84B96400DAD8D6 /* StartGradientViewController.swift */,
 			);
 			path = musicApp;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 				F6B30EE51F7786C000DAD8D6 /* ViewController.swift in Sources */,
 				F6B30F1B1F7CE85000DAD8D6 /* PostUrlViewController.swift in Sources */,
 				F6B30EEB1F7786C000DAD8D6 /* musicApp.xcdatamodeld in Sources */,
+				F6B30F271F84B96400DAD8D6 /* StartGradientViewController.swift in Sources */,
 				F6B30F151F79192E00DAD8D6 /* ArticleViewController.swift in Sources */,
 				F6B30F1D1F80BA3D00DAD8D6 /* Article.swift in Sources */,
 			);

@@ -8,8 +8,9 @@
 
 import UIKit
 import Firebase
+import SafariServices
 
-class postArticleViewController: UITableViewController {
+class postArticleViewController: UITableViewController,  SFSafariViewControllerDelegate{
     
 
     
@@ -31,6 +32,16 @@ class postArticleViewController: UITableViewController {
     
     
     // インスタンス変数
+    
+//    func showTutorial(_ which: Int){
+//        if let url = contentArray[contentArray.count - indexPath.row, -1]["url"] {
+//            let config = SFSafariViewController.Configuration()
+//            config.entersReaderIfAvailable = true
+//            let vc = SFSafariViewController(url: url, congiguration: config)
+//            present(vc, animated:true)
+//        }
+//    }
+//
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,10 +59,19 @@ class postArticleViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         cell?.textLabel?.text = contentArray[contentArray.count - indexPath.row - 1]["url"] as? String
-        print("-------")
-        print(contentArray[indexPath.row]["url"] as? String)
-        print("-------")
+//        print("-------")
+//        print(contentArray[indexPath.row]["url"] as? String)
+//        print("-------")
         return cell!
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let urlString = contentArray[contentArray.count - indexPath.row - 1]["url"] as! String
+        let url = URL(urlString)
+        let config = SFSafariViewController.Configuration()
+        config.entersReaderIfAvailable = true
+        let vc = SFSafariViewController(url: url as! URL, configuration: config)
+        present(vc, animated:true)
     }
     
     func read() {
@@ -78,8 +98,5 @@ class postArticleViewController: UITableViewController {
             tableView.reloadData()
         }
     }
-    
-    
-   
-    
+
 }
