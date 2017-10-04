@@ -67,10 +67,11 @@ class postArticleViewController: UITableViewController,  SFSafariViewControllerD
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let urlString = contentArray[contentArray.count - indexPath.row - 1]["url"] as! String
-        let url = URL(urlString)
+        let url = NSURL(string: urlString)
+        
         let config = SFSafariViewController.Configuration()
         config.entersReaderIfAvailable = true
-        let vc = SFSafariViewController(url: url as! URL, configuration: config)
+        let vc = SFSafariViewController(url: (url)! as URL, configuration: config)
         present(vc, animated:true)
     }
     
