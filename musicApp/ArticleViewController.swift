@@ -48,10 +48,10 @@ class postArticleViewController: UITableViewController,  SFSafariViewControllerD
         read()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//    }
+//    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return contentArray.count
     }
@@ -67,7 +67,7 @@ class postArticleViewController: UITableViewController,  SFSafariViewControllerD
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let urlString = contentArray[contentArray.count - indexPath.row - 1]["url"] as! String
-        let url = NSURL(string: urlString)
+        let url = URL(string: urlString)
         
         let config = SFSafariViewController.Configuration()
         config.entersReaderIfAvailable = true
