@@ -5,6 +5,7 @@
 //  Created by 小林純也 on 2017/10/05.
 //  Copyright © 2017年 Junya Kobayashi. All rights reserved.
 //
+//黄金比は1:1.618となる
 
 import UIKit
 import Firebase
@@ -27,6 +28,14 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        if self.checkUserVerify() {
+            self.transitionToView()
+        }
+    }
+    
+    func checkUserVerify() -> Bool{
+        guard let user = Auth.auth().currentUser else {return false}
+        return user.isEmailVerified
     }
     
     override func didReceiveMemoryWarning() {
@@ -63,6 +72,13 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         guard let password = passwordTextField.text else {return}
         Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
             if error == nil {
+                user?.sendEmailVerification(completion: {(error) in
+                    if error == nil {
+                        self.transitionToLogin()
+                    }else{
+                        print("\(String(describing: error?.localizedDescription))")
+                    }
+                })
                 self.transitionToLogin()
             }else{
                 print()

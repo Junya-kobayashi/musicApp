@@ -5,6 +5,7 @@
 //  Created by 小林純也 on 2017/10/05.
 //  Copyright © 2017年 Junya Kobayashi. All rights reserved.
 //
+//黄金比は1:1.618となる
 
 import UIKit
 import Firebase
@@ -55,14 +56,29 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
         Auth.auth().signIn(withEmail: email, password: password, completion: {(user, error) in
             if error == nil {
                 if let loginUser = user {
+                    if self.checkUserValidate(user: loginUser){
+                        print(Auth.auth().currentUser)
+                        self.transitionToView()
+                    }else{
+                        self.presentValidateAlert()
+                    }
                     self.transitionToView()
                 }
             }else{
-                print("")
+                print("error")
             }
         })
     }
-
+    
+    func checkUserValidate(user: User) -> Bool{
+        return user.isEmailVerified
+    }
+    
+    func presentValidateAlert() {
+        let alert = UIAlertController(title: "メール認証", message: "メール認証を送ってください", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated:true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
