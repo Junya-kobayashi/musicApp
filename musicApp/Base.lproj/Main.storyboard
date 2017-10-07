@@ -12,7 +12,7 @@
         <!--Title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="musicApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignupViewController" customModule="musicApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,6 +40,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Sign up"/>
                                         <connections>
+                                            <action selector="willSignup" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zqf-oO-oAa"/>
                                             <segue destination="cj3-Tq-jbO" kind="show" id="D4g-40-Rsy"/>
                                         </connections>
                                     </button>
@@ -48,6 +49,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Log in"/>
                                         <connections>
+                                            <action selector="willTransitionToLogin" destination="BYZ-38-t0r" eventType="touchUpInside" id="uii-tA-Oh1"/>
                                             <segue destination="Ucx-vF-OjE" kind="show" id="wxb-z1-smh"/>
                                         </connections>
                                     </button>
@@ -59,19 +61,30 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="3Qp-FT-ZsR"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="JNF-zZ-8Bv" id="mWo-gc-pqp"/>
+                        <outlet property="passwordTextField" destination="Uj8-Bc-Aen" id="lSb-fB-etP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-148" y="109.29535232383809"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="FY7-gK-gy0">
             <objects>
-                <viewController id="Ucx-vF-OjE" sceneMemberID="viewController">
+                <viewController id="Ucx-vF-OjE" customClass="LoginViewController" customModule="musicApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="znl-3M-7ZL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9er-yz-cBw">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="login" id="wer-zS-k5x"/>
+                                </items>
+                            </navigationBar>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="eMail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nOw-yO-nv7">
                                 <rect key="frame" x="72" y="195" width="231" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -98,6 +111,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="lyH-Xl-TYr"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="nOw-yO-nv7" id="U8z-4l-8rA"/>
+                        <outlet property="passwordTextField" destination="YZD-Da-HAB" id="yel-Of-SKa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qKT-Bw-ECZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -248,6 +265,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="D4g-40-Rsy"/>
+        <segue reference="lmh-Xd-HL9"/>
     </inferredMetricsTieBreakers>
 </document>
