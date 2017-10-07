@@ -12,6 +12,8 @@
 		F5C8EEB25DA4902032475025 /* Pods_musicAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8BC22A327470DF20CBDCD91 /* Pods_musicAppUITests.framework */; };
 		F68B6E531F85F1D5008B8768 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68B6E521F85F1D5008B8768 /* SignupViewController.swift */; };
 		F68B6E551F862F45008B8768 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68B6E541F862F45008B8768 /* LoginViewController.swift */; };
+		F68B6E591F89483A008B8768 /* home-image.png in Resources */ = {isa = PBXBuildFile; fileRef = F68B6E581F89483A008B8768 /* home-image.png */; };
+		F68B6E7E1F8948FC008B8768 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F68B6E7D1F8948FC008B8768 /* icon.png */; };
 		F6B30EE51F7786C000DAD8D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B30EE41F7786C000DAD8D6 /* ViewController.swift */; };
 		F6B30EE81F7786C000DAD8D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B30EE61F7786C000DAD8D6 /* Main.storyboard */; };
 		F6B30EEB1F7786C000DAD8D6 /* musicApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6B30EE91F7786C000DAD8D6 /* musicApp.xcdatamodeld */; };
@@ -57,6 +59,8 @@
 		D8BC22A327470DF20CBDCD91 /* Pods_musicAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_musicAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F68B6E521F85F1D5008B8768 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		F68B6E541F862F45008B8768 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F68B6E581F89483A008B8768 /* home-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home-image.png"; path = "../../../Desktop/home-image.png"; sourceTree = "<group>"; };
+		F68B6E7D1F8948FC008B8768 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		F6B30EDF1F7786C000DAD8D6 /* musicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = musicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B30EE21F7786C000DAD8D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6B30EE41F7786C000DAD8D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +170,8 @@
 				F6B30EE91F7786C000DAD8D6 /* musicApp.xcdatamodeld */,
 				F6B30F1A1F7CE85000DAD8D6 /* PostUrlViewController.swift */,
 				F6B30F1C1F80BA3D00DAD8D6 /* Article.swift */,
+				F68B6E7D1F8948FC008B8768 /* icon.png */,
+				F68B6E581F89483A008B8768 /* home-image.png */,
 				F6B30F261F84B96400DAD8D6 /* StartGradientViewController.swift */,
 				F68B6E521F85F1D5008B8768 /* SignupViewController.swift */,
 				F68B6E541F862F45008B8768 /* LoginViewController.swift */,
@@ -308,6 +314,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6B30EF01F7786C000DAD8D6 /* LaunchScreen.storyboard in Resources */,
+				F68B6E591F89483A008B8768 /* home-image.png in Resources */,
+				F68B6E7E1F8948FC008B8768 /* icon.png in Resources */,
 				F6B30F191F7930B600DAD8D6 /* GoogleService-Info.plist in Resources */,
 				F6B30EED1F7786C000DAD8D6 /* Assets.xcassets in Resources */,
 				F6B30EE81F7786C000DAD8D6 /* Main.storyboard in Resources */,
